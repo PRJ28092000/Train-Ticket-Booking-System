@@ -1,0 +1,27 @@
+.Title{
+    background-color: #0056b3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-size: x-large;
+    padding: 20px;
+    font-size: 35px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 15%;
+    border-radius: 100px;
+    margin-left: 80%;
+}
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgb(187, 221, 255) !important;
+}

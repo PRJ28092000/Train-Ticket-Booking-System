@@ -1,0 +1,24 @@
+<div class="container">
+  <form>
+    <label class="form-label" for="form3Example1c">Source</label>
+    <select [(ngModel)]="departureStationId" id="departureStationId" name="departureStationId" class="form-select">
+      <option value="0">Source</option>
+      @for (item of stationList; track $index) {
+        <option [value]="item.stationID">{{ item.stationName }}</option>
+      }
+    </select>
+
+    <label class="form-label" for="form3Example1c">Destination</label>
+    <select [(ngModel)]="arrivalStationId" id="arrivalStationId" name="arrivalStationId" class="form-select">
+      <option value="0">Destination</option>
+      @for (item of stationList; track $index) {
+        <option [value]="item.stationID">{{ item.stationName }}</option>
+      }
+    </select>
+
+    <label for="dateInput">Date of Travel</label>
+    <input type="date" [(ngModel)]="departureDate" id="dateInput" name="dateInput" />
+
+    <button type="submit" style="font-size: large" (click)="onSearch()">Search</button>
+  </form>
+</div>
